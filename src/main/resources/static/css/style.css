@@ -1,0 +1,49 @@
+body {
+    background-color: #f4f4f4;
+    font-family: "Arial", sans-serif;
+  }
+
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .profile {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .match-list {
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .match-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .match-won {
+    background-color: #c3e6cb;
+  }
+
+  .match-lost {
+    background-color: #f8d7da;
+  }
+
+  .filter-container {
+    margin-bottom: 20px;
+  }
+  .match-item p{
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .match-item p:not(:last-child){
+    margin-right:5rem;
+  }

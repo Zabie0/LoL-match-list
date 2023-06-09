@@ -1,0 +1,87 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: #000 url("static/files/background.jpg");
+}
+  
+  .header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  .form-box {
+    width: 500px;
+    height: 800px; /* Adjust the height as needed */
+    padding: 100px;
+    border-radius: 5px;
+    margin-bottom: 120px;
+  }
+
+  .form-back{
+    background: url("static/files/decor.png") no-repeat center center/110%;
+    position: relative;
+    background-size: contain;
+  }
+
+  .form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .form-box label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .form-box input[type="text"],
+  .form-box input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-box textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .form-box .checkbox-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-box .checkbox-group label {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+  .form-box button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .form-box button[type="submit"]:hover {
+    background-color: #45a049;
+  }

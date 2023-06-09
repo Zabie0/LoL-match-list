@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/form_style.css" rel="stylesheet">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="/files/LoL_icon.png" alt="LoL Logo" style="width:30px;height:30px">
+          <span class="ml-2">LoL Player Stats</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-container">
+    <div class="form-back">
+      <div class="form-box">
+        <h2>Team Registration</h2>
+        <form action="/team" method="post" enctype="multipart/form-data" th:class="Team">
+          <label for="team-name">Team Name:</label>
+          <input type="text" id="team-name" name="team-name" required>
+
+          <div class="checkbox-group">
+            <label>Participated in any official tournaments before:</label>
+            <label><input type="radio" name="previous-tournaments" value="yes"> Yes</label>
+            <label><input type="radio" name="previous-tournaments" value="no"> No</label>
+          </div>
+
+          <div class="checkbox-group">
+            <label>Have any additional players for change:</label>
+            <label><input type="radio" name="additional-players" value="yes"> Yes</label>
+            <label><input type="radio" name="additional-players" value="no"> No</label>
+          </div>
+
+          <label for="team-info">Overall Info:</label>
+          <textarea id="team-info" name="team-info" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

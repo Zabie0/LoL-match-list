@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoL Player Stats</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="/files/LoL_icon.png" alt="LoL Logo" style="width: 30px;height:30px">
+                <span class="ml-2">LoL Player Stats</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="profile">
+                <img src="/files/profile_icon.png" alt="Profile Icon" style="width: 80px;height: 30px">
+                <h4>Summoner Name</h4>
+                <p>Total Wins: <span id="total-wins">0</span></p>
+                <p>Total Losses: <span id="total-losses">0</span></p>
+                <p>Rank: <span id="rank">Unranked</span></p>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="filter-container">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label for="game-result">Game Result:</label>
+                        <select class="form-control mx-2" id="game-result">
+                            <option value="all">All</option>
+                            <option value="won">Won</option>
+                            <option value="lost">Lost</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="game-duration">Game Duration (minutes):</label>
+                        <input type="number" class="form-control mx-2" id="game-duration" min="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="champion">Champion:</label>
+                        <input type="text" class="form-control mx-2" id="champion">
+                    </div>
+                </div>
+            </div>
+            <div class="match-list">
+                <div class="match-item match-won">
+                    <p>Duration:<br> 25 minutes</p>
+                    <p>Champion:<br> Ahri</p>
+                    <p>Result:<br> Won</p>
+                    <p>Date:<br> May 23, 2023</p>
+                </div>
+                <div class="match-item match-lost">
+                    <p>Duration:<br> 30 minutes</p>
+                    <p>Champion:<br> Yasuo</p>
+                    <p>Result:<br> Lost</p>
+                    <p>Date:<br> May 22, 2023</p>
+                </div>
+                <div class="match-item match-won">
+                    <p>Duration:<br> 20 minutes</p>
+                    <p>Champion:<br> Lux</p>
+                    <p>Result:<br> Won</p>
+                    <p>Date:<br> May 21, 2023</p>
+                </div>
+                <div class="match-item match-lost">
+                    <p>Duration:<br> 32 minutes</p>
+                    <p>Champion:<br> Ahri</p>
+                    <p>Result:<br> Lost</p>
+                    <p>Date:<br> May 20, 2023</p>
+                </div>
+                <div class="match-item match-lost">
+                    <p>Duration:<br> 32 minutes</p>
+                    <p>Champion:<br> Ahri</p>
+                    <p>Result:<br> Lost</p>
+                    <p>Date:<br> May 20, 2023</p>
+                </div>
+                <div class="match-item match-won">
+                    <p>Duration:<br> 20 minutes</p>
+                    <p>Champion:<br> Lux</p>
+                    <p>Result:<br> Won</p>
+                    <p>Date:<br> May 21, 2023</p>
+                </div>
+                <div class="match-item match-won">
+                    <p>Duration:<br> 20 minutes</p>
+                    <p>Champion:<br> Lux</p>
+                    <p>Result:<br> Won</p>
+                    <p>Date:<br> May 21, 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/script/script.js"></script>
+</body>
+</html>
